@@ -11,6 +11,7 @@
 		BE47F86C28AA754C00E80D87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE47F86B28AA754C00E80D87 /* ContentView.swift */; };
 		BE47F86E28AA755000E80D87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE47F86D28AA755000E80D87 /* Assets.xcassets */; };
 		BE47F87128AA755000E80D87 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE47F87028AA755000E80D87 /* Preview Assets.xcassets */; };
+		BE47F87B28AAC76F00E80D87 /* DescriptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE47F87A28AAC76F00E80D87 /* DescriptionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		BE47F86B28AA754C00E80D87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BE47F86D28AA755000E80D87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE47F87028AA755000E80D87 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BE47F87A28AAC76F00E80D87 /* DescriptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				BE47F86928AA754C00E80D87 /* Sport_SchoolApp.swift */,
-				BE47F86B28AA754C00E80D87 /* ContentView.swift */,
+				BE47F87C28AAC77600E80D87 /* Model */,
+				BE47F87928AAC64F00E80D87 /* View */,
 				BE47F86D28AA755000E80D87 /* Assets.xcassets */,
 				BE47F86F28AA755000E80D87 /* Preview Content */,
 			);
@@ -65,6 +68,22 @@
 				BE47F87028AA755000E80D87 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BE47F87928AAC64F00E80D87 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE47F86B28AA754C00E80D87 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BE47F87C28AAC77600E80D87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE47F87A28AAC76F00E80D87 /* DescriptionModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE47F86C28AA754C00E80D87 /* ContentView.swift in Sources */,
+				BE47F87B28AAC76F00E80D87 /* DescriptionModel.swift in Sources */,
 				BE47F86A28AA754C00E80D87 /* Sport_SchoolApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
