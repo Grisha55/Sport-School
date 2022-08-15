@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ScreensTabView.swift
 //  Sport School
 //
 //  Created by Григорий Виняр on 15/08/2022.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ScreensTabView: View {
     var body: some View {
         TabView {
             Text("Меню")
@@ -37,8 +37,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct TabView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ScreensTabView()
     }
 }
