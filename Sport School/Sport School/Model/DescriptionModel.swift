@@ -12,4 +12,5 @@ struct DescriptionModel: Identifiable {
     let title: String
     let transcription: String
     let finishResult: String
+    let imageName: String
 }

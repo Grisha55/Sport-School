@@ -11,12 +11,11 @@ import Foundation
 class MenuViewModel: ObservableObject {
     @Published var descriptions: [DescriptionModel] = []
     
-    func getTodos() {
-        let plankDescription = DescriptionModel(title: "Дневная планка", transcription: "30 ДНЕЙ ПЛАНКИ ЧЕЛЛЕНДЖ", finishResult: "ДОБЕЙСЯ РЕЗУЛЬТАТА В 5 МИНУТ")
+    func getDescriptions() {
+        let plankDescription = DescriptionModel(title: "Дневная планка", transcription: "30 ДНЕЙ ПЛАНКИ", finishResult: "Результат 5 мин в планке", imageName: "plank")
         
-        let pushupsDescription = DescriptionModel(title: "Дневные отжимания", transcription: "30 ДНЕЙ ОТЖИМАНИЙ ЧЕЛЛЕНДЖ", finishResult: "ДОБЕЙСЯ РЕЗУЛЬТАТА в 50 ОТЖИМАНИЙ ЗА РАЗ")
+        let pushupsDescription = DescriptionModel(title: "Дневные отжимания", transcription: "30 ДНЕЙ ОТЖИМАНИЙ", finishResult: "Результат: 50 отжиманий за раз", imageName: "pushups")
         
-        descriptions.append(plankDescription)
-        descriptions.append(pushupsDescription)
+        descriptions = [plankDescription, pushupsDescription]
     }
 }
