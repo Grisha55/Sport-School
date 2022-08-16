@@ -29,7 +29,7 @@ struct MenuView: View {
                     .foregroundColor(.init(white: 8))
                 
                 Spacer()
-            }.background(.green)
+            }.background(Color.green).opacity(0.8)
         }
         .padding(.top, 160)
         .padding(.leading, 20)

@@ -15,6 +15,7 @@
 		BE47F87E28AAC8D500E80D87 /* ScreensTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE47F87D28AAC8D500E80D87 /* ScreensTabView.swift */; };
 		BE47F88028AAC95500E80D87 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE47F87F28AAC95500E80D87 /* MenuViewModel.swift */; };
 		BE47F88328AACB4C00E80D87 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE47F88228AACB4C00E80D87 /* MenuView.swift */; };
+		BE47F88A28AB7B1500E80D87 /* GuidanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE47F88928AB7B1500E80D87 /* GuidanceModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		BE47F87D28AAC8D500E80D87 /* ScreensTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreensTabView.swift; sourceTree = "<group>"; };
 		BE47F87F28AAC95500E80D87 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 		BE47F88228AACB4C00E80D87 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		BE47F88928AB7B1500E80D87 /* GuidanceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidanceModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +64,8 @@
 				BE47F86928AA754C00E80D87 /* Sport_SchoolApp.swift */,
 				BE47F86B28AA754C00E80D87 /* ContentView.swift */,
 				BE47F87D28AAC8D500E80D87 /* ScreensTabView.swift */,
-				BE47F88128AAC95A00E80D87 /* ViewModel */,
-				BE47F87C28AAC77600E80D87 /* Model */,
-				BE47F87928AAC64F00E80D87 /* View */,
+				BE47F88828AB766B00E80D87 /* GuidanceModule */,
+				BE47F88428AB761900E80D87 /* MenuModule */,
 				BE47F86D28AA755000E80D87 /* Assets.xcassets */,
 				BE47F86F28AA755000E80D87 /* Preview Content */,
 			);
@@ -101,6 +102,32 @@
 				BE47F87F28AAC95500E80D87 /* MenuViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BE47F88428AB761900E80D87 /* MenuModule */ = {
+			isa = PBXGroup;
+			children = (
+				BE47F88128AAC95A00E80D87 /* ViewModel */,
+				BE47F87C28AAC77600E80D87 /* Model */,
+				BE47F87928AAC64F00E80D87 /* View */,
+			);
+			path = MenuModule;
+			sourceTree = "<group>";
+		};
+		BE47F88828AB766B00E80D87 /* GuidanceModule */ = {
+			isa = PBXGroup;
+			children = (
+				BE47F88B28AB7B4700E80D87 /* Model */,
+			);
+			path = GuidanceModule;
+			sourceTree = "<group>";
+		};
+		BE47F88B28AB7B4700E80D87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE47F88928AB7B1500E80D87 /* GuidanceModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +205,7 @@
 				BE47F87B28AAC76F00E80D87 /* DescriptionModel.swift in Sources */,
 				BE47F87E28AAC8D500E80D87 /* ScreensTabView.swift in Sources */,
 				BE47F88028AAC95500E80D87 /* MenuViewModel.swift in Sources */,
+				BE47F88A28AB7B1500E80D87 /* GuidanceModel.swift in Sources */,
 				BE47F86A28AA754C00E80D87 /* Sport_SchoolApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
