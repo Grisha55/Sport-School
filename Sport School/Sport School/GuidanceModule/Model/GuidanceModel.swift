@@ -9,5 +9,7 @@ import Foundation
 
 struct GuidanceModel: Identifiable {
     let id = UUID()
+    let title: String
     let guidance: String
+    let imageName: String
 }
