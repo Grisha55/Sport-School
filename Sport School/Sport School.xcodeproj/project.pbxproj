@@ -17,6 +17,7 @@
 		BE47F88328AACB4C00E80D87 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE47F88228AACB4C00E80D87 /* MenuView.swift */; };
 		BE47F88A28AB7B1500E80D87 /* GuidanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE47F88928AB7B1500E80D87 /* GuidanceModel.swift */; };
 		BE47F88D28AB7BB300E80D87 /* GuidanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE47F88C28AB7BB300E80D87 /* GuidanceViewModel.swift */; };
+		BE47F89028AB981D00E80D87 /* GuidanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE47F88F28AB981D00E80D87 /* GuidanceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		BE47F88228AACB4C00E80D87 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		BE47F88928AB7B1500E80D87 /* GuidanceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidanceModel.swift; sourceTree = "<group>"; };
 		BE47F88C28AB7BB300E80D87 /* GuidanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidanceViewModel.swift; sourceTree = "<group>"; };
+		BE47F88F28AB981D00E80D87 /* GuidanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidanceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 			children = (
 				BE47F88B28AB7B4700E80D87 /* Model */,
 				BE47F88E28AB7BB800E80D87 /* ViewModel */,
+				BE47F89128AB982200E80D87 /* View */,
 			);
 			path = GuidanceModule;
 			sourceTree = "<group>";
@@ -139,6 +142,14 @@
 				BE47F88C28AB7BB300E80D87 /* GuidanceViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BE47F89128AB982200E80D87 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE47F88F28AB981D00E80D87 /* GuidanceView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +228,7 @@
 				BE47F87E28AAC8D500E80D87 /* ScreensTabView.swift in Sources */,
 				BE47F88028AAC95500E80D87 /* MenuViewModel.swift in Sources */,
 				BE47F88A28AB7B1500E80D87 /* GuidanceModel.swift in Sources */,
+				BE47F89028AB981D00E80D87 /* GuidanceView.swift in Sources */,
 				BE47F88D28AB7BB300E80D87 /* GuidanceViewModel.swift in Sources */,
 				BE47F86A28AA754C00E80D87 /* Sport_SchoolApp.swift in Sources */,
 			);
