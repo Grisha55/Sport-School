@@ -10,7 +10,7 @@ import SwiftUI
 struct ScreensTabView: View {
     var body: some View {
         TabView {
-            Text("Меню")
+            MenuView()
                 .tabItem {
                     Image(systemName: "house")
                     Text("Меню")
