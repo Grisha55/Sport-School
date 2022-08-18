@@ -18,6 +18,8 @@
 		BE47F88A28AB7B1500E80D87 /* GuidanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE47F88928AB7B1500E80D87 /* GuidanceModel.swift */; };
 		BE47F88D28AB7BB300E80D87 /* GuidanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE47F88C28AB7BB300E80D87 /* GuidanceViewModel.swift */; };
 		BE47F89028AB981D00E80D87 /* GuidanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE47F88F28AB981D00E80D87 /* GuidanceView.swift */; };
+		BECD13A028AEBC3700ECF780 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECD139F28AEBC3700ECF780 /* SettingsView.swift */; };
+		BECD13A428AECA4300ECF780 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECD13A328AECA4300ECF780 /* SettingsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		BE47F88928AB7B1500E80D87 /* GuidanceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidanceModel.swift; sourceTree = "<group>"; };
 		BE47F88C28AB7BB300E80D87 /* GuidanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidanceViewModel.swift; sourceTree = "<group>"; };
 		BE47F88F28AB981D00E80D87 /* GuidanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidanceView.swift; sourceTree = "<group>"; };
+		BECD139F28AEBC3700ECF780 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		BECD13A328AECA4300ECF780 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 				BE47F86928AA754C00E80D87 /* Sport_SchoolApp.swift */,
 				BE47F86B28AA754C00E80D87 /* ContentView.swift */,
 				BE47F87D28AAC8D500E80D87 /* ScreensTabView.swift */,
+				BECD139E28AEBC2400ECF780 /* SettingsModule */,
 				BE47F88828AB766B00E80D87 /* GuidanceModule */,
 				BE47F88428AB761900E80D87 /* MenuModule */,
 				BE47F86D28AA755000E80D87 /* Assets.xcassets */,
@@ -152,6 +157,31 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		BECD139E28AEBC2400ECF780 /* SettingsModule */ = {
+			isa = PBXGroup;
+			children = (
+				BECD13A228AECA2B00ECF780 /* ViewModel */,
+				BECD13A128AECA2500ECF780 /* View */,
+			);
+			path = SettingsModule;
+			sourceTree = "<group>";
+		};
+		BECD13A128AECA2500ECF780 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BECD139F28AEBC3700ECF780 /* SettingsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BECD13A228AECA2B00ECF780 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BECD13A328AECA4300ECF780 /* SettingsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -227,8 +257,10 @@
 				BE47F87B28AAC76F00E80D87 /* DescriptionModel.swift in Sources */,
 				BE47F87E28AAC8D500E80D87 /* ScreensTabView.swift in Sources */,
 				BE47F88028AAC95500E80D87 /* MenuViewModel.swift in Sources */,
+				BECD13A028AEBC3700ECF780 /* SettingsView.swift in Sources */,
 				BE47F88A28AB7B1500E80D87 /* GuidanceModel.swift in Sources */,
 				BE47F89028AB981D00E80D87 /* GuidanceView.swift in Sources */,
+				BECD13A428AECA4300ECF780 /* SettingsViewModel.swift in Sources */,
 				BE47F88D28AB7BB300E80D87 /* GuidanceViewModel.swift in Sources */,
 				BE47F86A28AA754C00E80D87 /* Sport_SchoolApp.swift in Sources */,
 			);
