@@ -16,7 +16,7 @@ struct ScreensTabView: View {
                     Text("Меню")
                 }
             
-            Text("Руководство")
+            GuidanceView()
                 .tabItem {
                     Image(systemName: "questionmark.folder")
                     Text("Руководство")
