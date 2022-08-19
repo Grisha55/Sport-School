@@ -29,15 +29,11 @@ struct MenuView: View {
                     .foregroundColor(.black)
                 
                 NavigationLink {
-                    TrainingPlankView()
+                    TrainingPlankView(trainingViewTitle: description.title)
                 } label: {
                     Text("")
-                        .opacity(0)
-                        .background(.clear)
-                        .foregroundColor(.clear)
                 }
 
-                
                 Spacer()
             }
         }

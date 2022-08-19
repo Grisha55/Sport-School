@@ -12,44 +12,50 @@ let timer = Timer
     .autoconnect()
 
 struct TrainingPlankView: View {
+    var trainingViewTitle: String
     @State var counter: Int = 0
     var countTo: Int = 120 //4 minutes 120 - 2minutes
     
     var body: some View {
-        VStack{
-            ZStack{
-                Circle()
-                    .fill(Color.clear)
-                    .frame(width: 250, height: 250)
-                    .overlay(
-                        Circle().stroke(Color.green, lineWidth: 25)
-                    )
-                
-                Circle()
-                    .fill(Color.clear)
-                    .frame(width: 250, height: 250)
-                    .overlay(
-                        Circle().trim(from:0, to: progress())
-                            .stroke(
-                                style: StrokeStyle(
-                                    lineWidth: 25,
-                                    lineCap: .round,
-                                    lineJoin:.round
+        
+        if trainingViewTitle == "Дневная планка" {
+            VStack {
+                ZStack{
+                    Circle()
+                        .fill(Color.clear)
+                        .frame(width: 250, height: 250)
+                        .overlay(
+                            Circle().stroke(Color.green, lineWidth: 25)
+                        )
+                    
+                    Circle()
+                        .fill(Color.clear)
+                        .frame(width: 250, height: 250)
+                        .overlay(
+                            Circle().trim(from:0, to: progress())
+                                .stroke(
+                                    style: StrokeStyle(
+                                        lineWidth: 25,
+                                        lineCap: .round,
+                                        lineJoin:.round
+                                    )
                                 )
-                            )
-                            .foregroundColor(
-                                (completed() ? Color.orange : Color.red)
-                            ).animation(
-                                .easeInOut(duration: 0.2)
-                            )
-                    )
-                
-                Clock(counter: counter, countTo: countTo)
-            }
-        }.onReceive(timer) { time in
-            if (self.counter < self.countTo) {
-                self.counter += 1
-            }
+                                .foregroundColor(
+                                    (completed() ? Color.orange : Color.red)
+                                ).animation(.easeInOut, value: 0.2)
+                        )
+                    
+                    Clock(counter: counter, countTo: countTo)
+                }
+            }.onReceive(timer) { time in
+                if (self.counter < self.countTo) {
+                    self.counter += 1
+                }
+        }
+        } else if trainingViewTitle == "Дневные отжимания" {
+            TrainingPushupsView()
+        
+        
         }
     }
     
@@ -85,6 +91,7 @@ struct Clock: View {
 
 struct TrainingView_Previews: PreviewProvider {
     static var previews: some View {
-        TrainingPlankView()
+        let trainingView = "Plank"
+        TrainingPlankView(trainingViewTitle: trainingView)
     }
 }
