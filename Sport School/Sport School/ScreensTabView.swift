@@ -10,25 +10,34 @@ import SwiftUI
 struct ScreensTabView: View {
     var body: some View {
         TabView {
-            MenuView()
+            NavigationView {
+                MenuView()
+            }
                 .tabItem {
                     Image(systemName: "house")
                     Text("Меню")
                 }
             
-            GuidanceView()
+            NavigationView {
+                GuidanceView()
+            }
                 .tabItem {
                     Image(systemName: "questionmark.folder")
                     Text("Руководство")
                 }
             
-            HistoryView()
+            NavigationView {
+                HistoryView()
+                .navigationTitle("📚 История")
+            }
                 .tabItem {
                     Image(systemName: "archivebox")
                     Text("История")
                 }
             
-            SettingsView()
+            NavigationView {
+                SettingsView()
+            }
                 .tabItem {
                     Image(systemName: "gear")
                     Text("Настройки")
