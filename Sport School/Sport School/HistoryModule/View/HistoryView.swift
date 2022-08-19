@@ -15,11 +15,12 @@ struct HistoryView: View {
                 
                 ZStack {
                     Rectangle()
-                        .scaledToFit()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(height: 250)
+                        .frame(height: 400)
                         .foregroundColor(.blue)
                         .opacity(0.6)
+                        .scaledToFill()
+                        .padding(.bottom, -90)
+                        
                     VStack {
                         Text("💫 Sport School Pro")
                             .font(.system(size: 30, weight: .bold, design: .default))
@@ -42,9 +43,9 @@ struct HistoryView: View {
                                 .cornerRadius(15)
                                 .foregroundColor(.white)
                                 .font(.custom("Regular", size: 20))
+                                .padding()
                         }
                     }
-                    
                 }
 
             }

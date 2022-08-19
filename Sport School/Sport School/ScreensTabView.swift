@@ -22,7 +22,7 @@ struct ScreensTabView: View {
                     Text("Руководство")
                 }
             
-            Text("История")
+            HistoryView()
                 .tabItem {
                     Image(systemName: "archivebox")
                     Text("История")
