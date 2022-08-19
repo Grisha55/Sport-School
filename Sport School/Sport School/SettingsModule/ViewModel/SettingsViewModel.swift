@@ -10,7 +10,7 @@ import Foundation
 @MainActor
 class SettingsViewModel: ObservableObject {
     
-    @Published var properties = [String]()
+    @Published var properties: [String] = []
     
     func getProperties() {
         let audio = "Поддержка аудио"

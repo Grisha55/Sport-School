@@ -28,7 +28,7 @@ struct ScreensTabView: View {
                     Text("История")
                 }
             
-            Text("Настройки")
+            SettingsView()
                 .tabItem {
                     Image(systemName: "gear")
                     Text("Настройки")
