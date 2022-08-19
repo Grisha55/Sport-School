@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BE39100128AF73D30001163F /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE39100028AF73D30001163F /* HistoryView.swift */; };
+		BE39100528AFAD990001163F /* TrainingPlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE39100428AFAD990001163F /* TrainingPlankView.swift */; };
 		BE47F86A28AA754C00E80D87 /* Sport_SchoolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE47F86928AA754C00E80D87 /* Sport_SchoolApp.swift */; };
 		BE47F86C28AA754C00E80D87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE47F86B28AA754C00E80D87 /* ContentView.swift */; };
 		BE47F86E28AA755000E80D87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE47F86D28AA755000E80D87 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		BE39100028AF73D30001163F /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		BE39100428AFAD990001163F /* TrainingPlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingPlankView.swift; sourceTree = "<group>"; };
 		BE47F86628AA754C00E80D87 /* Sport School.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sport School.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE47F86928AA754C00E80D87 /* Sport_SchoolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sport_SchoolApp.swift; sourceTree = "<group>"; };
 		BE47F86B28AA754C00E80D87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +70,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		BE39100228AFAD6D0001163F /* TrainingModule */ = {
+			isa = PBXGroup;
+			children = (
+				BE39100328AFAD8A0001163F /* View */,
+			);
+			path = TrainingModule;
+			sourceTree = "<group>";
+		};
+		BE39100328AFAD8A0001163F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE39100428AFAD990001163F /* TrainingPlankView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		BE47F85D28AA754C00E80D87 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +108,7 @@
 				BE47F86928AA754C00E80D87 /* Sport_SchoolApp.swift */,
 				BE47F86B28AA754C00E80D87 /* ContentView.swift */,
 				BE47F87D28AAC8D500E80D87 /* ScreensTabView.swift */,
+				BE39100228AFAD6D0001163F /* TrainingModule */,
 				BE390FFE28AF73B30001163F /* HistoryModule */,
 				BECD139E28AEBC2400ECF780 /* SettingsModule */,
 				BE47F88828AB766B00E80D87 /* GuidanceModule */,
@@ -279,6 +298,7 @@
 				BE47F88028AAC95500E80D87 /* MenuViewModel.swift in Sources */,
 				BECD13A028AEBC3700ECF780 /* SettingsView.swift in Sources */,
 				BE47F88A28AB7B1500E80D87 /* GuidanceModel.swift in Sources */,
+				BE39100528AFAD990001163F /* TrainingPlankView.swift in Sources */,
 				BE47F89028AB981D00E80D87 /* GuidanceView.swift in Sources */,
 				BECD13A428AECA4300ECF780 /* SettingsViewModel.swift in Sources */,
 				BE47F88D28AB7BB300E80D87 /* GuidanceViewModel.swift in Sources */,
