@@ -47,10 +47,7 @@ struct HistoryView: View {
                         }
                     }
                 }
-
             }
-            
-            .navigationTitle("📚 История")
         }
     }
 }

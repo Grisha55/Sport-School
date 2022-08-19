@@ -17,7 +17,7 @@ struct SettingsView: View {
                 .resizable()
                 .scaledToFit()
                 .aspectRatio(contentMode: .fill)
-                .frame(height: 250)
+                .frame(height: 150)
                 .padding(.top, -50)
             
             List {
@@ -114,6 +114,8 @@ struct SettingsView: View {
 
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsView()
+        NavigationView {
+            SettingsView()
+        }
     }
 }
