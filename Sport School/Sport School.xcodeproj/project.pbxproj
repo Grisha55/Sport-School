@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE39100128AF73D30001163F /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE39100028AF73D30001163F /* HistoryView.swift */; };
 		BE47F86A28AA754C00E80D87 /* Sport_SchoolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE47F86928AA754C00E80D87 /* Sport_SchoolApp.swift */; };
 		BE47F86C28AA754C00E80D87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE47F86B28AA754C00E80D87 /* ContentView.swift */; };
 		BE47F86E28AA755000E80D87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE47F86D28AA755000E80D87 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE39100028AF73D30001163F /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		BE47F86628AA754C00E80D87 /* Sport School.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sport School.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE47F86928AA754C00E80D87 /* Sport_SchoolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sport_SchoolApp.swift; sourceTree = "<group>"; };
 		BE47F86B28AA754C00E80D87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +52,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE390FFE28AF73B30001163F /* HistoryModule */ = {
+			isa = PBXGroup;
+			children = (
+				BE390FFF28AF73C40001163F /* View */,
+			);
+			path = HistoryModule;
+			sourceTree = "<group>";
+		};
+		BE390FFF28AF73C40001163F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE39100028AF73D30001163F /* HistoryView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		BE47F85D28AA754C00E80D87 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +90,7 @@
 				BE47F86928AA754C00E80D87 /* Sport_SchoolApp.swift */,
 				BE47F86B28AA754C00E80D87 /* ContentView.swift */,
 				BE47F87D28AAC8D500E80D87 /* ScreensTabView.swift */,
+				BE390FFE28AF73B30001163F /* HistoryModule */,
 				BECD139E28AEBC2400ECF780 /* SettingsModule */,
 				BE47F88828AB766B00E80D87 /* GuidanceModule */,
 				BE47F88428AB761900E80D87 /* MenuModule */,
@@ -253,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE47F86C28AA754C00E80D87 /* ContentView.swift in Sources */,
+				BE39100128AF73D30001163F /* HistoryView.swift in Sources */,
 				BE47F88328AACB4C00E80D87 /* MenuView.swift in Sources */,
 				BE47F87B28AAC76F00E80D87 /* DescriptionModel.swift in Sources */,
 				BE47F87E28AAC8D500E80D87 /* ScreensTabView.swift in Sources */,
