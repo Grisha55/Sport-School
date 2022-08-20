@@ -18,22 +18,28 @@ struct MenuView: View {
             Section {
                 Text("\(description.title)")
                     .font(.system(size: 30, weight: .bold, design: .default))
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
                 
                 Text("\(description.transcription)")
-                    .font(.system(size: 20, weight: .regular, design: .default))
-                    .foregroundColor(.init(white: 8))
+                    .font(.system(size: 20, weight: .semibold, design: .default))
+                    .foregroundColor(.black)
                 
                 Text("\(description.finishResult)")
-                    .font(.system(size: 18, weight: .light, design: .default))
-                    .foregroundColor(.init(white: 8))
+                    .font(.system(size: 20, weight: .bold, design: .default))
+                    .foregroundColor(.black)
                 
+                NavigationLink {
+                    TrainingPlankView(trainingViewTitle: description.title)
+                } label: {
+                    Text("")
+                }
+
                 Spacer()
-            }.background(.green)
+            }
         }
         .padding(.top, 160)
         .padding(.leading, 20)
-        .background(Image(description.imageName).resizable().opacity(0.8))
+        .background(Image(description.imageName).resizable().opacity(0.6))
         .cornerRadius(30)
         .listRowInsets(.init(top: 20, leading: 0, bottom: 10, trailing: 0))
     }
