@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		BE39100128AF73D30001163F /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE39100028AF73D30001163F /* HistoryView.swift */; };
 		BE39100528AFAD990001163F /* TrainingPlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE39100428AFAD990001163F /* TrainingPlankView.swift */; };
-		BE3F43A228B00FFF0058D50B /* TrainingPushupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3F43A128B00FFE0058D50B /* TrainingPushupsView.swift */; };
+		BE3F43A228B00FFF0058D50B /* FirstTrainingPushupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3F43A128B00FFE0058D50B /* FirstTrainingPushupsView.swift */; };
 		BE47F86A28AA754C00E80D87 /* Sport_SchoolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE47F86928AA754C00E80D87 /* Sport_SchoolApp.swift */; };
 		BE47F86C28AA754C00E80D87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE47F86B28AA754C00E80D87 /* ContentView.swift */; };
 		BE47F86E28AA755000E80D87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE47F86D28AA755000E80D87 /* Assets.xcassets */; };
@@ -23,12 +23,15 @@
 		BE47F89028AB981D00E80D87 /* GuidanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE47F88F28AB981D00E80D87 /* GuidanceView.swift */; };
 		BECD13A028AEBC3700ECF780 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECD139F28AEBC3700ECF780 /* SettingsView.swift */; };
 		BECD13A428AECA4300ECF780 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECD13A328AECA4300ECF780 /* SettingsViewModel.swift */; };
+		BED4713E28B28078000FAB26 /* View+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED4713D28B28078000FAB26 /* View+extension.swift */; };
+		BED4714028B28A71000FAB26 /* SecondTrainingPushupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED4713F28B28A71000FAB26 /* SecondTrainingPushupsView.swift */; };
+		BED4714728B2A2BA000FAB26 /* TrainingsSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED4714628B2A2BA000FAB26 /* TrainingsSaver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BE39100028AF73D30001163F /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		BE39100428AFAD990001163F /* TrainingPlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingPlankView.swift; sourceTree = "<group>"; };
-		BE3F43A128B00FFE0058D50B /* TrainingPushupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingPushupsView.swift; sourceTree = "<group>"; };
+		BE3F43A128B00FFE0058D50B /* FirstTrainingPushupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTrainingPushupsView.swift; sourceTree = "<group>"; };
 		BE47F86628AA754C00E80D87 /* Sport School.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sport School.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE47F86928AA754C00E80D87 /* Sport_SchoolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sport_SchoolApp.swift; sourceTree = "<group>"; };
 		BE47F86B28AA754C00E80D87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,6 +46,9 @@
 		BE47F88F28AB981D00E80D87 /* GuidanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidanceView.swift; sourceTree = "<group>"; };
 		BECD139F28AEBC3700ECF780 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		BECD13A328AECA4300ECF780 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		BED4713D28B28078000FAB26 /* View+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+extension.swift"; sourceTree = "<group>"; };
+		BED4713F28B28A71000FAB26 /* SecondTrainingPushupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTrainingPushupsView.swift; sourceTree = "<group>"; };
+		BED4714628B2A2BA000FAB26 /* TrainingsSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingsSaver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				BE39100428AFAD990001163F /* TrainingPlankView.swift */,
-				BE3F43A128B00FFE0058D50B /* TrainingPushupsView.swift */,
+				BE3F43A128B00FFE0058D50B /* FirstTrainingPushupsView.swift */,
+				BED4713F28B28A71000FAB26 /* SecondTrainingPushupsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -108,6 +115,7 @@
 		BE47F86828AA754C00E80D87 /* Sport School */ = {
 			isa = PBXGroup;
 			children = (
+				BED4713C28B28065000FAB26 /* View+extensions */,
 				BE47F86928AA754C00E80D87 /* Sport_SchoolApp.swift */,
 				BE47F86B28AA754C00E80D87 /* ContentView.swift */,
 				BE47F87D28AAC8D500E80D87 /* ScreensTabView.swift */,
@@ -118,6 +126,7 @@
 				BE47F88428AB761900E80D87 /* MenuModule */,
 				BE47F86D28AA755000E80D87 /* Assets.xcassets */,
 				BE47F86F28AA755000E80D87 /* Preview Content */,
+				BED4714628B2A2BA000FAB26 /* TrainingsSaver.swift */,
 			);
 			path = "Sport School";
 			sourceTree = "<group>";
@@ -223,6 +232,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		BED4713C28B28065000FAB26 /* View+extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BED4713D28B28078000FAB26 /* View+extension.swift */,
+			);
+			path = "View+extensions";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -294,15 +311,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE47F86C28AA754C00E80D87 /* ContentView.swift in Sources */,
-				BE3F43A228B00FFF0058D50B /* TrainingPushupsView.swift in Sources */,
+				BE3F43A228B00FFF0058D50B /* FirstTrainingPushupsView.swift in Sources */,
 				BE39100128AF73D30001163F /* HistoryView.swift in Sources */,
 				BE47F88328AACB4C00E80D87 /* MenuView.swift in Sources */,
 				BE47F87B28AAC76F00E80D87 /* DescriptionModel.swift in Sources */,
+				BED4714028B28A71000FAB26 /* SecondTrainingPushupsView.swift in Sources */,
 				BE47F87E28AAC8D500E80D87 /* ScreensTabView.swift in Sources */,
 				BE47F88028AAC95500E80D87 /* MenuViewModel.swift in Sources */,
 				BECD13A028AEBC3700ECF780 /* SettingsView.swift in Sources */,
 				BE47F88A28AB7B1500E80D87 /* GuidanceModel.swift in Sources */,
 				BE39100528AFAD990001163F /* TrainingPlankView.swift in Sources */,
+				BED4713E28B28078000FAB26 /* View+extension.swift in Sources */,
+				BED4714728B2A2BA000FAB26 /* TrainingsSaver.swift in Sources */,
 				BE47F89028AB981D00E80D87 /* GuidanceView.swift in Sources */,
 				BECD13A428AECA4300ECF780 /* SettingsViewModel.swift in Sources */,
 				BE47F88D28AB7BB300E80D87 /* GuidanceViewModel.swift in Sources */,
