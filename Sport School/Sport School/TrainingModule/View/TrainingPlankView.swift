@@ -53,7 +53,7 @@ struct TrainingPlankView: View {
                 }
         }
         } else if trainingViewTitle == "Дневные отжимания" {
-            TrainingPushupsView()
+            FirstTrainingPushupsView()
         
         
         }
