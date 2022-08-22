@@ -18,6 +18,7 @@ struct SecondTrainingPushupsView: View {
         
         Button {
           TrainingsSaver.shared.pushupsTrainingResults.append("\(numberOfPushups)")
+          RootController.auth.send(false)
         } label: {
           Text("Готово")
         }
