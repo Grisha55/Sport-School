@@ -8,22 +8,30 @@
 import SwiftUI
 
 struct SecondTrainingPushupsView: View {
-  var numberOfPushups: Int = 0
+  var numberOfPushups: Int
   
     var body: some View {
-      // TODO: Здесь будет печатать последовательность отжиманий, основанная от переданного значение (максимума)
-      Text("Сделайте \(numberOfPushups) отжиманий")
-      Button {
+      VStack {
+        Text("Сделайте \(numberOfPushups) + \(numberOfPushups - 5) + \(numberOfPushups - 10) + \(numberOfPushups - 15) отжиманий")
+          .padding()
+          .font(.system(size: 30, weight: .regular, design: .default))
         
-      } label: {
-        Text("Готово")
+        Button {
+          TrainingsSaver.shared.pushupsTrainingResults.append("\(numberOfPushups)")
+        } label: {
+          Text("Готово")
+        }
+        .padding()
+        .background(.blue)
+        .foregroundColor(.white)
+        .cornerRadius(15)
+        .font(.headline)
       }
-
     }
 }
 
 struct SecondTrainingPushupsView_Previews: PreviewProvider {
     static var previews: some View {
-        SecondTrainingPushupsView()
+        SecondTrainingPushupsView(numberOfPushups: 50)
     }
 }
