@@ -12,7 +12,7 @@ struct SecondTrainingPushupsView: View {
   
     var body: some View {
       // TODO: Здесь будет печатать последовательность отжиманий, основанная от переданного значение (максимума)
-        Text("Сделайте \(numberOfPushups) отжиманий")
+      Text("Сделайте \(numberOfPushups) отжиманий")
       Button {
         
       } label: {

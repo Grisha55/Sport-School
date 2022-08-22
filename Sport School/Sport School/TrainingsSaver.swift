@@ -9,11 +9,12 @@ import Foundation
 
 final class TrainingsSaver {
   
-  let shared = TrainingsSaver()
+  static let shared = TrainingsSaver()
   
-  init() {}
+  private init() {}
   
-  static var plankTrainingResults: [String] = []
-  static var pushupsTrainingResults: [String] = []
+  var plankTrainingResults: [String] = []
+  var pushupsTrainingResults: [String] = []
+  
   
 }
