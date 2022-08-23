@@ -13,8 +13,7 @@ final class TrainingsSaver {
   
   private init() {}
   
-  var plankTrainingResults: [String] = []
-  var pushupsTrainingResults: [String] = []
+  var trainingResults: [[String : String]] = []
   
   
 }

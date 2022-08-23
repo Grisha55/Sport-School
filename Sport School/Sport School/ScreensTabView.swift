@@ -25,7 +25,7 @@ struct ScreensTabView: View {
                 }
             
           NavigationView {
-                HistoryView(pushupsResults: [])
+                HistoryOfResultsView()
                 .navigationTitle("📚 История")
             }
                 .tabItem {

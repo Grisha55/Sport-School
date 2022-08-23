@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SecondTrainingPushupsView: View {
   var numberOfPushups: Int
+  @State private var count = 0
   
     var body: some View {
       VStack {
@@ -17,7 +18,10 @@ struct SecondTrainingPushupsView: View {
           .font(.system(size: 30, weight: .regular, design: .default))
         
         Button {
-          TrainingsSaver.shared.pushupsTrainingResults.append("\(numberOfPushups)")
+          count += 1
+          let key = "Отжимания\(count)"
+          let value = "\(numberOfPushups)"
+          TrainingsSaver.shared.trainingResults.append([key : value])
           RootController.auth.send(false)
         } label: {
           Text("Готово")
