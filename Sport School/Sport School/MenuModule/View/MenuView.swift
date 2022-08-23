@@ -10,6 +10,8 @@ import SwiftUI
 struct MenuView: View {
     @StateObject var menuViewModel = MenuViewModel()
     
+    @State private var isActive = false
+    
     fileprivate func listRow(_ description: DescriptionModel) -> some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack {
@@ -28,7 +30,7 @@ struct MenuView: View {
                     .font(.system(size: 20, weight: .bold, design: .default))
                     .foregroundColor(.black)
                 
-                NavigationLink {
+              NavigationLink(isActive: $isActive) {
                     TrainingPlankView(trainingViewTitle: description.title)
                 } label: {
                     Text("")
@@ -45,6 +47,7 @@ struct MenuView: View {
     }
     
     fileprivate func DescriptionList() -> some View {
+      NavigationView {
         List {
             ForEach(menuViewModel.descriptions) { item in
                 listRow(item)
@@ -56,6 +59,10 @@ struct MenuView: View {
         .task {
             menuViewModel.getDescriptions()
         }
+      }.onReceive(RootController.auth) { newValue in
+        isActive = newValue
+      }
+        
     }
     
     var body: some View {
@@ -65,8 +72,6 @@ struct MenuView: View {
 
 struct MenuView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView {
-            MenuView()
-        }.navigationViewStyle(StackNavigationViewStyle()).previewInterfaceOrientation(.portrait)
+        MenuView()
     }
 }

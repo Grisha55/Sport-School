@@ -10,9 +10,7 @@ import SwiftUI
 struct ScreensTabView: View {
     var body: some View {
         TabView {
-            NavigationView {
-                MenuView()
-            }
+              MenuView()
                 .tabItem {
                     Image(systemName: "house")
                     Text("Меню")
@@ -27,7 +25,7 @@ struct ScreensTabView: View {
                 }
             
           NavigationView {
-                HistoryView(pushupsResults: [])
+                HistoryOfResultsView()
                 .navigationTitle("📚 История")
             }
                 .tabItem {
