@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HistoryView: View {
+struct HistorySubscriptionView: View {
   var pushupsResults: [String]
   
     var body: some View {
@@ -56,6 +56,6 @@ struct HistoryView: View {
 
 struct HistoryView_Previews: PreviewProvider {
     static var previews: some View {
-        HistoryView(pushupsResults: [])
+        HistorySubscriptionView(pushupsResults: [])
     }
 }
