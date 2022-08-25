@@ -29,12 +29,6 @@ struct MenuView: View {
                 Text("\(description.finishResult)")
                     .font(.system(size: 20, weight: .bold, design: .default))
                     .foregroundColor(.black)
-                
-              NavigationLink(isActive: $isActive) {
-                    TrainingPlankView(trainingViewTitle: description.title)
-                } label: {
-                    Text("")
-                }
 
                 Spacer()
             }
@@ -49,10 +43,17 @@ struct MenuView: View {
     fileprivate func DescriptionList() -> some View {
       NavigationView {
         List {
-            ForEach(menuViewModel.descriptions) { item in
-                listRow(item)
+          ForEach(0..<menuViewModel.descriptions.count, id: \.self) { index in
+            listRow(menuViewModel.descriptions[index])
                     .listRowBackground(Color.clear)
                     .listRowSeparator(.hidden)
+              
+              NavigationLink(isActive: $isActive) {
+                TrainingPlankView(trainingViewTitle: menuViewModel.descriptions[index].title)
+                } label: {
+                    Text("Нажми, чтобы продолжить")
+                    .font(.system(size: 30, weight: .bold, design: .default))
+                }
             }
         }
         .navigationTitle("Тренировки")
